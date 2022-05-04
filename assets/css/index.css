@@ -1,0 +1,239 @@
+:root{
+    --primary-ad-color: #b11313;
+    --black-ad-color: #000000;
+    --white-ad-color: #ffffff;
+    --blue-color:#114c92;
+}
+
+#hero{
+    background-image: url("../img/img1.png");
+    background-color: var(--primary-ad-color);
+    height: 870px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size:auto;
+}
+.titre{
+    margin-bottom: 50px;
+}
+
+#lesspiderman{
+    background-color: var(--primary-ad-color);
+}
+#lesspiderman h1{
+    font-size: 35px;
+}
+.cta{
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.button1{
+    background-color: var(--white-ad-color);
+    color: var(--primary-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+    margin-right: 45px;
+    transition: .3s;
+    z-index: 80;
+}
+.cta .button2{
+    border: var(--white-ad-color) 2px solid;
+    color: var(--white-ad-color);
+    border-radius: 40px;
+    padding: 15px 20px;
+    z-index: 80;
+}
+
+.card-text{
+    text-align: justify;
+}
+/* .card-unique{
+    width: 30%;
+    margin-right: auto;
+} */
+.card-unique ul{
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#spiderman{
+    color: var(--white-ad-color);
+    background-color: var(--blue-color);
+    height: 550px;
+    background-image: url("../img/img5.png");
+    background-position: center left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+h1{
+    font-family: 'far_from_homecomingregular';
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#spiderman form{
+    display: flex;
+    flex-direction: column;
+}
+
+#spiderman .spiderman-formulaire .form-spiderman, input[type=submit]{
+    width: 375px;
+    border-radius: 30px;
+    color: var(--white-ad-color);
+    border-color: var(--white-ad-color);
+    padding: 5px;
+    margin: 10px auto;
+    z-index: 2;
+}
+
+input[type=submit]{
+    width: 200px;
+    background-color: transparent;
+    padding: 10px 20px;
+}
+
+#newsletter{
+    background-color: var(--primary-ad-color);
+    height: 550px;
+    background-image: url("../img/img6.png");
+    background-position: center right;
+    background-size: 700px;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+}
+
+.newsletter-formulaire{
+    margin-top: 70px;
+    z-index: 2;
+}
+
+.newsletter-formulaire input[type=text],.newsletter-formulaire input[type=email]{
+    border-radius: 20px;
+    width: 400px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    background-color: #ffffff00;
+    border-color: white;
+}
+::placeholder{
+    color: white;
+}
+
+.newsletter-formulaire input[type=submit]{
+    background-color: white;
+    color: #000000;
+}
+
+/* class pour le javascript  */
+
+/* pour les boutton  */
+.MouseHover2 {
+    background-color: var(--white-ad-color);
+    color: var(--primary-ad-color);
+    box-shadow: 2px 4px 2px 0px rgba(202, 9, 9, 0.705);
+    border-radius: 40px;
+    padding: 15px 20px;
+    transition: .3s;
+}
+.boutton2 {
+    background-color:transparent;
+    color: var(--white-ad-color);
+    border-radius: 40px;
+    transition: .3s;
+    padding: 15px 20px;
+    z-index: 5;
+}
+.MouseHover1{
+
+    background-color: transparent;
+    color: var(--white-ad-color);
+    box-shadow: 2px 4px 2px 0px rgba(255, 255, 255, 0.544);
+    border-radius: 40px;
+    padding: 15px 20px;
+    margin-right: 45px;
+    transition: .3s;
+
+}
+
+/* pour les animations des titres  */
+.slideTitle{
+    animation-name: titre;
+    animation-duration: 3s;
+}
+
+@keyframes titre {
+    0%{
+        opacity: 0%;
+        transform: translateX(-100px) ;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+/* les icones des reseaux sociaux  */
+.hoverIcone {
+   background-color: #42ffd3d4 !important;
+   filter: invert(100%);
+}
+
+/* les animation pour les paragraphes  */
+.slidePara{
+    animation-name: para;
+    animation-duration: 3s;
+}
+
+@keyframes para {   
+    0%{
+        opacity: 0%;
+        
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+/* pour le spiderman slide  */
+.spidermanSlide{
+    position: fixed;
+    top: 18%;
+    right: 1%;
+    opacity: 0%;
+}
+.spiderNoir{
+    position: fixed;
+    top: 50%;
+    left: 0%;
+    opacity: 0%;
+    z-index: 0;
+
+
+}
+
+.opa1{
+    opacity: 80% !important; 
+    z-index: 0;
+}
+
+.opa2{
+    opacity: 0% !important;
+}
+
+/* les image scale sur le mouseover  */
+
+.scale{
+    transform: scale(1.1);
+    transition: .5s;
+    overflow: hidden;
+}
+
+
+
